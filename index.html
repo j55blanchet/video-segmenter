@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Segmenter</title>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col-6">
+                <video-library></video-library>
+            </div>
+            <div class="col-6">
+                <video-player></video-player>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <tree-visualizer></tree-visualizer>
+            </div>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/video-library.js"></script>
+    <script src="js/video-player.js"></script>
+    <script type="module" src="js/tree-visualizer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
