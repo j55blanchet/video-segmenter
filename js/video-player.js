@@ -6,23 +6,30 @@ class VideoPlayer extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>
                 @import url('https://unpkg.com/chota@latest');
-                div {
+                :host {
+                    display: flex;
+                    flex-direction: column;
                     margin-bottom: 1rem;
                     max-height: 100%;
                 }
                 #video {
+                    flex: 1 1 100%;
                     max-width: 100%;
                 }
-                :host {
-                    display: block;
+                h2 {
+                    flex: 0 0 auto;
+                }
+                #controls {
+                    flex: 0 0 auto;
                 }
                 :root {
                     height: 100%;
                 }
             </style>
-            <div>
-                <h2>Video Player</h2>
-                <video id="video" controls class="u-full-width"></video>
+            
+            <h2>Video Player</h2>
+            <video id="video" controls class="u-full-width"></video>
+            <div id="controls">
                 <label for="playback-speed">Playback speed: </label>
                 <select id="playback-speed" class="input">
                     <option value="0.25">0.25x</option>
@@ -31,6 +38,7 @@ class VideoPlayer extends HTMLElement {
                     <option value="1" selected>1x</option>
                 </select>
             </div>
+            
         `;
     
         // Bind methods
