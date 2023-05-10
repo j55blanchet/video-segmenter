@@ -12,7 +12,7 @@ and implementing using webcomponents.
 ## Installation
 
 This is a web-based tool and is published using github pages. You can access it
-at [https://jamesroutley.github.io/video-segmenter/](https://jamesroutley.github.io/video-segmenter/).
+at <https://julien.studio/video-segmenter/>.
 
 Running it locally is as simple as starting a development server in the root of
 this repo. No build tasks are required.
